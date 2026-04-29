@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Diego Vega Reyes — Ingeniero en Computación. Backend Python, frontend React/Vue. Portafolio y proyectos."
+    />
+    <title>Diego Vega Reyes — Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Principal">
+        <a class="logo" href="#">Diego <span>Vega</span></a>
+        <ul class="nav-links">
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li>
+            <a href="mailto:diego_vegaaa@hotmail.com">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="hero-layout">
+          <figure class="hero-photo">
+            <img
+              src="foto_curriculum.jpg"
+              alt="Retrato de Diego Vega Reyes"
+              width="200"
+              height="200"
+              decoding="async"
+            />
+          </figure>
+          <div class="hero-content">
+            <p class="hero-badge">Portafolio</p>
+            <h1 id="titulo-principal">Diego Vega Reyes</h1>
+            <p class="headline">
+              Ingeniero en Computación · Cédula Profesional 13811203 · Más de 5
+              años en desarrollo backend con Python y experiencia en frontend con
+              Vue y React.
+            </p>
+            <div class="hero-meta">
+              <span>Puebla, México</span>
+              <a href="mailto:diego_vegaaa@hotmail.com"
+                >diego_vegaaa@hotmail.com</a
+              >
+              <a href="tel:+522229210119">+52 222 921 0119</a>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:diego_vegaaa@hotmail.com"
+                >Contacto por correo</a
+              >
+              <a class="btn btn-ghost" href="#proyectos">Ver proyectos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" aria-labelledby="proyectos-titulo">
+        <h2 id="proyectos-titulo" class="section-title">Proyectos</h2>
+        <p class="section-lead">
+          Proyectos propios descritos a modo de contexto; sin enlaces a código
+          público. El foco principal es una aplicación pensada para uso real del
+          negocio.
+        </p>
+
+        <article class="ona-feature" aria-labelledby="ona-titulo">
+          <p class="eyebrow">Producción · uso real del negocio</p>
+          <h2 id="ona-titulo">Ona Nails — citas y administración</h2>
+          <p>
+            <strong>Ona Nails</strong> es un negocio de uñas. La web tiene como
+            objetivo principal mostrar la información del negocio y permitir a
+            las clientas <strong>agendar citas</strong>. Incluye un
+            <strong>módulo de administración</strong> para gestionar citas,
+            servicios y el día a día del negocio. Cliente desarrollado con
+            <strong>React</strong>; API y lógica de negocio con
+            <strong>Python (FastAPI)</strong>. Es el proyecto con mayor
+            probabilidad de pasar a producción para el <strong>uso real</strong>
+            del establecimiento.
+          </p>
+          <ul class="ona-list">
+            <li><strong>Landing e información</strong> del negocio y servicios.</li>
+            <li>
+              <strong>Flujo de citas</strong> orientado a la experiencia de la
+              clienta.
+            </li>
+            <li>
+              <strong>Administración</strong>: citas, servicios y operación
+              interna.
+            </li>
+          </ul>
+        </article>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">Personal Researcher</h3>
+            <span class="lang">Vue 3 · Python (FastAPI)</span>
+            <p>
+              Proyecto personal para practicar el uso de
+              <strong>agentes de IA</strong>. Ecosistema frontend + backend bajo
+              el mismo nombre de referencia.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Permisos y seguridad</h3>
+            <span class="lang">Python (Flask) · Apache-2.0</span>
+            <p>Librería / utilidades relacionadas con permisos y seguridad.</p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Pruebas E2E con Cypress</h3>
+            <span class="lang">JavaScript</span>
+            <p>Práctica y automatización de pruebas E2E con Cypress.</p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Kong en Docker</h3>
+            <span class="lang">Makefile / Docker</span>
+            <p>Orquestación y referencia con Kong en entorno contenedorizado.</p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Pruebas con sockets</h3>
+            <span class="lang">Python (Flask)</span>
+            <p>Experimentos con comunicación en tiempo real vía sockets.</p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Task management</h3>
+            <span class="lang">Vue 3 · Python (Django)</span>
+            <p>Gestión de tareas full stack (frontend y backend acoplados).</p>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Descarga en ZIP</h3>
+            <span class="lang">Python (Flask)</span>
+            <p>Utilidad para descarga empaquetada en ZIP.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="perfil" aria-labelledby="perfil-titulo">
+        <h2 id="perfil-titulo" class="section-title">Perfil profesional</h2>
+        <p class="section-lead" style="margin-bottom: 0">
+          Ingeniero en Computación con más de 5 años de experiencia en desarrollo
+          backend con Python (Django, Flask, FastAPI). Experiencia en
+          frontend con Vue 3, React y React Native. Implementación de soluciones con IA
+          (OpenAI, Gemini, Claude) y automatización de procesos. Experiencia en el uso de librerias
+          para analisis de datos y graficas (Pandas, Numpy, Matplotlib, Plotly, etc.). Integración de
+          APIs de terceros  y sistemas en tiempo
+          real. Enfoque en entrega de soluciones de alto rendimiento con
+          metodologías ágiles.
+        </p>
+      </section>
+
+      <section id="experiencia" aria-labelledby="exp-titulo">
+        <h2 id="exp-titulo" class="section-title">Experiencia</h2>
+        <p class="section-lead">
+          Trayectoria alineada con tu CV; detalles en entrevista o en repositorio.
+        </p>
+        <div class="timeline">
+          <article class="job">
+            <div class="job-header">
+              <h3>SIGSA — Desarrollador Back End</h3>
+              <span class="job-meta">Puebla, México · May 2021 — presente</span>
+            </div>
+            <ul>
+              <li>
+                Arquitectura backend con Flask y patrones de diseño escalables.
+              </li>
+              <li>
+                Optimización SQL y ORM; mejoras de rendimiento de hasta ~70% con
+                índices estratégicos.
+              </li>
+              <li>
+                Tareas asíncronas con Celery: notificaciones, reportes y
+                procesamiento de datos.
+              </li>
+              <li>
+                APIs REST documentadas con Swagger/OpenAPI para web y móvil.
+              </li>
+              <li>
+                Integraciones: geolocalización (Google Maps, Mapbox),
+                mensajería (Twilio, WhatsApp) y pagos.
+              </li>
+              <li>Caché con Redis para rendimiento.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <div class="job-header">
+              <h3>Freelance — Desarrollador Full Stack</h3>
+              <span class="job-meta">Puebla, México · Jun 2024 — Oct 2025</span>
+            </div>
+            <ul>
+              <li>Python (Django) y Vue 3 / React Native en frontend.</li>
+              <li>
+                APIs de IA (GPT-4, Gemini, Claude): contenido, chatbots,
+                automatización.
+              </li>
+              <li>
+                Testing E2E con Cypress.
+              </li>
+              <li>Meta Business API para modulo de mensajeria.</li>
+              <li>
+                Firebase (Auth, Firestore, Functions, Storage) y tiempo real.
+              </li>
+              <li>Web scraping con Apify.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="educacion" aria-labelledby="edu-titulo">
+        <h2 id="edu-titulo" class="section-title">Educación y certificaciones</h2>
+        <p class="section-lead">
+          Estudios formales y certificaciones; incluye formación en curso donde
+          aplica.
+        </p>
+        <div class="edu-grid">
+          <article class="edu-card">
+            <p class="inst">Instituto Politécnico Nacional — ESIME Culhuacán</p>
+            <h3>Ingeniería en Computación</h3>
+            <p class="when">Ciudad de México · Sep 2016 — Dic 2020</p>
+            <ul>
+              <li>Título en Ingeniería en Computación</li>
+              <li>Cédula Profesional 13811203</li>
+            </ul>
+          </article>
+          <article class="edu-card">
+            <p class="inst">CBTIs 134</p>
+            <h3>Educación Profesional Técnica</h3>
+            <p class="when">Puebla, México · Sep 2013 — Jun 2016</p>
+          </article>
+          <article class="edu-card">
+            <p class="inst">Cisco Networking Academy</p>
+            <h3>
+              Fundamentos de Python 1
+              <span lang="en">(Python Essentials 1)</span>
+            </h3>
+            <p class="when">En curso</p>
+            <p class="cert-inline">
+              Programa oficial de NetAcad: fundamentos del lenguaje Python,
+              lógica, sintaxis y práctica. Curso:
+              <a
+                href="https://www.netacad.com/es/courses/python-essentials-1?courseLang=es-XL"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Fundamentos de Python 1 en Cisco Networking Academy</a
+              >.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="habilidades" aria-labelledby="hab-titulo">
+        <h2 id="hab-titulo" class="section-title">Habilidades</h2>
+        <p class="section-lead">
+          Resumen técnico tomado de tu CV; agrupado para escaneo rápido.
+        </p>
+        <div class="skills-wrap">
+          <div class="skill-block">
+            <h3>Lenguajes</h3>
+            <p>Python (avanzado), JavaScript (ES6+), SQL</p>
+          </div>
+          <div class="skill-block">
+            <h3>Backend</h3>
+            <p>Django, Flask, FastAPI</p>
+          </div>
+          <div class="skill-block">
+            <h3>Frontend y móvil</h3>
+            <p>Vue.js 3, React, React Native</p>
+          </div>
+          <div class="skill-block">
+            <h3>Bases de datos</h3>
+            <p>
+              PostgreSQL, MySQL, Redis (caché), Firestore, Firebase Realtime
+              Database
+            </p>
+          </div>
+          <div class="skill-block">
+            <h3>APIs e integraciones</h3>
+            <p>REST, GraphQL, Swagger/OpenAPI, Postman</p>
+          </div>
+          <div class="skill-block">
+            <h3>IA</h3>
+            <p>
+              OpenAI GPT-4, Gemini, Claude
+            </p>
+          </div>
+          <div class="skill-block">
+            <h3>Cloud</h3>
+            <p>Firebase, Google Cloud Platform, AWS (básico)</p>
+          </div>
+          <div class="skill-block">
+            <h3>DevOps y herramientas</h3>
+            <p>Git, GitHub, GitLab, Docker (básico), Linux, Nginx, Apache</p>
+          </div>
+          <div class="skill-block">
+            <h3>Testing y automatización</h3>
+            <p>Cypress (E2E), Apify, Selenium, BeautifulSoup</p>
+          </div>
+          <div class="skill-block">
+            <h3>Third-party</h3>
+            <p>
+              Meta Business API, WhatsApp Business API, Twilio, Google Maps API,
+              Stripe, PayPal
+            </p>
+          </div>
+          <div class="skill-block">
+            <h3>Metodologías</h3>
+            <p>Scrum, Agile, Git Flow, code review, clean code, SOLID, patrones</p>
+          </div>
+        </div>
+        <h3
+          class="section-title"
+          style="font-size: 1rem; margin-top: 2rem; margin-bottom: 0.75rem"
+        >
+          Habilidades interpersonales
+        </h3>
+        <ul class="soft-list">
+          <li>Trabajo en equipo</li>
+          <li>Comunicación efectiva</li>
+          <li>Responsabilidad</li>
+          <li>Liderazgo técnico</li>
+          <li>Aprendizaje continuo</li>
+        </ul>
+        <h3
+          class="section-title"
+          style="font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem"
+        >
+          Idiomas
+        </h3>
+        <ul class="soft-list">
+          <li>Español — nativo</li>
+          <li>Inglés — intermedio</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="extra-titulo">
+        <h2 id="extra-titulo" class="section-title">Formación complementaria</h2>
+        <ul class="ona-list" style="max-width: 65ch">
+          <li>
+            Congreso ROC&amp;C 2020 (29.a Reunión Internacional). Organizador IEEE
+            Sección México, noviembre 2020.
+          </li>
+          <li>
+            Exposición del proyecto «Reconocedor de Gestos Anímicos para un Aula
+            de Clase», Proyectos Tecnológicos 2019 ESIME Culhuacán, noviembre
+            2019.
+          </li>
+          <li>Curso de inglés nivel A2, Centro de Idiomas Volkswagen Zavaleta, Puebla.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Diego Vega Reyes ·
+        <a href="mailto:diego_vegaaa@hotmail.com">diego_vegaaa@hotmail.com</a>
+        · Puebla, México
+      </p>
+    </footer>
+  </body>
+</html>
