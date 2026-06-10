@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
   <body>
     <a class="skip-link" href="#contenido" data-i18n="skip">Ir al contenido</a>
@@ -169,7 +170,7 @@
 
       <section id="perfil" aria-labelledby="perfil-titulo">
         <h2 id="perfil-titulo" class="section-title" data-i18n="sec.profile">Perfil profesional</h2>
-        <p class="section-lead" style="margin-bottom: 0" data-i18n="profile.lead">
+        <p class="section-lead profile-text" data-i18n="profile.lead">
           Ingeniero en Computación con más de 5 años de experiencia en desarrollo
           backend con Python (Django, Flask, FastAPI). Experiencia en
           frontend con Vue 3, React y React Native. Implementación de soluciones con IA
@@ -178,6 +179,56 @@
           APIs de terceros y sistemas en tiempo real. Enfoque en entrega de soluciones de alto
           rendimiento con metodologías ágiles.
         </p>
+
+        <div class="tech-carousel" aria-hidden="true">
+            <div class="tech-carousel-track">
+              <div class="carousel-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="carousel-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+              <div class="carousel-item"><i class="devicon-flask-original tech-flask"></i><span>Flask</span></div>
+              <div class="carousel-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+              <div class="carousel-item"><i class="devicon-vuejs-plain colored"></i><span>Vue 3</span></div>
+              <div class="carousel-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="carousel-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="carousel-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+              <div class="carousel-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="carousel-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+              <div class="carousel-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
+              <div class="carousel-item"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+              <div class="carousel-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+              <div class="carousel-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="carousel-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+              <div class="carousel-item"><i class="devicon-github-original tech-github"></i><span>GitHub</span></div>
+              <div class="carousel-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+              <div class="carousel-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+              <div class="carousel-item"><i class="devicon-swagger-plain colored"></i><span>Swagger</span></div>
+              <div class="carousel-item"><i class="devicon-nginx-original colored"></i><span>Nginx</span></div>
+              <div class="carousel-item"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+              <div class="carousel-item"><i class="devicon-cypressio-plain colored"></i><span>Cypress</span></div>
+              <!-- duplicate for seamless loop -->
+              <div class="carousel-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+              <div class="carousel-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+              <div class="carousel-item"><i class="devicon-flask-original tech-flask"></i><span>Flask</span></div>
+              <div class="carousel-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+              <div class="carousel-item"><i class="devicon-vuejs-plain colored"></i><span>Vue 3</span></div>
+              <div class="carousel-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+              <div class="carousel-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+              <div class="carousel-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+              <div class="carousel-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+              <div class="carousel-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
+              <div class="carousel-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
+              <div class="carousel-item"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+              <div class="carousel-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+              <div class="carousel-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+              <div class="carousel-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+              <div class="carousel-item"><i class="devicon-github-original tech-github"></i><span>GitHub</span></div>
+              <div class="carousel-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+              <div class="carousel-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+              <div class="carousel-item"><i class="devicon-swagger-plain colored"></i><span>Swagger</span></div>
+              <div class="carousel-item"><i class="devicon-nginx-original colored"></i><span>Nginx</span></div>
+              <div class="carousel-item"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+              <div class="carousel-item"><i class="devicon-cypressio-plain colored"></i><span>Cypress</span></div>
+            </div>
+        </div>
       </section>
 
       <section id="experiencia" aria-labelledby="exp-titulo">
@@ -236,6 +287,7 @@
 
       <section id="habilidades" aria-labelledby="hab-titulo">
         <h2 id="hab-titulo" class="section-title" data-i18n="sec.skills">Habilidades</h2>
+
         <div class="skills-wrap">
           <div class="skill-block">
             <h3 data-i18n="skill.languages.title">Lenguajes</h3>
@@ -416,6 +468,11 @@
             'sec.languages': 'Idiomas',
             'lang.li1': 'Español — nativo',
             'lang.li2': 'Inglés — intermedio',
+            'tech.backend': 'Backend',
+            'tech.frontend': 'Frontend',
+            'tech.databases': 'Bases de datos',
+            'tech.cloud': 'Cloud &amp; DevOps',
+            'tech.tools': 'Herramientas',
             'sec.extra': 'Formación complementaria',
             'extra.li1': 'Congreso ROC&amp;C 2020 (29.ª Reunión Internacional). Organizador IEEE Sección México, noviembre 2020.',
             'extra.li2': 'Exposición del proyecto «Reconocedor de Gestos Anímicos para un Aula de Clase», Proyectos Tecnológicos 2019 ESIME Culhuacán, noviembre 2019.',
@@ -499,6 +556,11 @@
             'sec.languages': 'Languages',
             'lang.li1': 'Spanish — native',
             'lang.li2': 'English — intermediate',
+            'tech.backend': 'Backend',
+            'tech.frontend': 'Frontend',
+            'tech.databases': 'Databases',
+            'tech.cloud': 'Cloud &amp; DevOps',
+            'tech.tools': 'Tools',
             'sec.extra': 'Additional training',
             'extra.li1': 'ROC&amp;C 2020 Congress (29th International Meeting). Organised by IEEE Mexico Section, November 2020.',
             'extra.li2': 'Presentation of the project "Facial Gesture Recogniser for a Classroom", Technology Projects 2019 ESIME Culhuacán, November 2019.',
@@ -575,6 +637,46 @@
         langToggle.addEventListener('click', function () {
           applyLang(document.documentElement.lang === 'es' ? 'en' : 'es');
         });
+
+        /* ── Scroll reveal & header shadow ──────────────────────── */
+        var header = document.querySelector('.site-header');
+        var motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (motionOk) {
+          document
+            .querySelectorAll(
+              'main section:not(.hero), .project-card, .job, .edu-card, .ona-feature, .skill-block'
+            )
+            .forEach(function (el) {
+              el.classList.add('reveal');
+            });
+
+          var revealObserver = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  revealObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+          );
+
+          document.querySelectorAll('.reveal').forEach(function (el) {
+            revealObserver.observe(el);
+          });
+        }
+
+        window.addEventListener(
+          'scroll',
+          function () {
+            if (header) {
+              header.classList.toggle('is-scrolled', window.scrollY > 8);
+            }
+          },
+          { passive: true }
+        );
       })();
     </script>
   </body>
