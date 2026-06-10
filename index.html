@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,19 +17,26 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Ir al contenido</a>
+    <a class="skip-link" href="#contenido" data-i18n="skip">Ir al contenido</a>
     <header class="site-header">
-      <nav class="nav-inner" aria-label="Principal">
+      <nav class="nav-inner" aria-label="Principal" data-i18n-aria-label="nav.aria">
         <a class="logo" href="#">Diego <span>Vega</span></a>
         <ul class="nav-links">
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#educacion">Educación</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+          <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+          <li><a href="#educacion" data-i18n="nav.education">Educación</a></li>
+          <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
           <li>
-            <a href="mailto:diego_vegaaa@hotmail.com">Contacto</a>
+            <a href="mailto:diego_vegaaa@hotmail.com" data-i18n="nav.contact">Contacto</a>
           </li>
         </ul>
+        <div class="nav-controls">
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" data-i18n-aria-label="theme.aria">
+            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
       </nav>
     </header>
 
@@ -40,43 +47,40 @@
             <img
               src="foto_curriculum.jpg"
               alt="Retrato de Diego Vega Reyes"
+              data-i18n-alt="hero.img.alt"
               width="200"
               height="200"
               decoding="async"
             />
           </figure>
           <div class="hero-content">
-            <p class="hero-badge">Portafolio</p>
+            <p class="hero-badge" data-i18n="hero.badge">Portafolio</p>
             <h1 id="titulo-principal">Diego Vega Reyes</h1>
-            <p class="headline">
+            <p class="headline" data-i18n="hero.headline">
               Ingeniero en Computación · Cédula Profesional 13811203 · Más de 5
               años en desarrollo backend con Python y experiencia en frontend con
               Vue y React.
             </p>
             <div class="hero-meta">
               <span>Puebla, México</span>
-              <a href="mailto:diego_vegaaa@hotmail.com"
-                >diego_vegaaa@hotmail.com</a
-              >
+              <a href="mailto:diego_vegaaa@hotmail.com">diego_vegaaa@hotmail.com</a>
               <a href="tel:+522229210119">+52 222 921 0119</a>
             </div>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="mailto:diego_vegaaa@hotmail.com"
-                >Contacto por correo</a
-              >
-              <a class="btn btn-ghost" href="https://github.com/diegovega007">Ver proyectos</a>
+              <a class="btn btn-primary" href="mailto:diego_vegaaa@hotmail.com" data-i18n="hero.btn.contact">Contacto por correo</a>
+              <a class="btn btn-ghost" href="https://github.com/diegovega007" data-i18n="hero.btn.projects">Ver proyectos</a>
             </div>
           </div>
         </div>
       </section>
 
       <section id="proyectos" aria-labelledby="proyectos-titulo">
-        <h2 id="proyectos-titulo" class="section-title">Proyectos</h2>
+        <h2 id="proyectos-titulo" class="section-title" data-i18n="sec.projects">Proyectos</h2>
 
         <article class="ona-feature" aria-labelledby="ona-titulo">
-          <p class="eyebrow">Producción · uso real del negocio</p>
-          <h2 id="ona-titulo">Ona Nails — citas y administración</h2>
-          <p>
+          <p class="eyebrow" data-i18n="ona.eyebrow">Producción · uso real del negocio</p>
+          <h2 id="ona-titulo" data-i18n="ona.title">Ona Nails — citas y administración</h2>
+          <p data-i18n="ona.desc">
             <strong>Ona Nails</strong> es un negocio de uñas. La web tiene como
             objetivo principal mostrar la información del negocio y permitir a
             las clientas <strong>agendar citas</strong>. Incluye un
@@ -88,12 +92,12 @@
             del establecimiento.
           </p>
           <ul class="ona-list">
-            <li><strong>Landing e información</strong> del negocio y servicios.</li>
-            <li>
+            <li data-i18n="ona.li1"><strong>Landing e información</strong> del negocio y servicios.</li>
+            <li data-i18n="ona.li2">
               <strong>Flujo de citas</strong> orientado a la experiencia de la
               clienta.
             </li>
-            <li>
+            <li data-i18n="ona.li3">
               <strong>Administración</strong>: citas, servicios y operación
               interna.
             </li>
@@ -104,248 +108,220 @@
           <article class="project-card">
             <h3 class="project-title">Personal Researcher</h3>
             <span class="lang">Vue 3 · Python (FastAPI)</span>
-            <p>
+            <p data-i18n="proj.researcher.desc">
               Proyecto personal para practicar el uso de
               <strong>agentes de IA</strong>. Ecosistema frontend + backend bajo
               el mismo nombre de referencia.
             </p>
             <div class="project-links">
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/personal-researcher-frontend.git', '_blank')">Ver frontend</button>
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/personal-researcher-backend.git', '_blank')">Ver backend</button>
+              <button class="btn btn-ghost" data-i18n="btn.frontend" onclick="window.open('https://github.com/diegovega007/personal-researcher-frontend.git', '_blank')">Ver frontend</button>
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/personal-researcher-backend.git', '_blank')">Ver backend</button>
             </div>
-  
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Permisos y seguridad</h3>
+            <h3 class="project-title" data-i18n="proj.permisos.title">Permisos y seguridad</h3>
             <span class="lang">Python (Flask)</span>
-            <p>Librería / utilidades relacionadas con permisos y seguridad.</p>
+            <p data-i18n="proj.permisos.desc">Librería / utilidades relacionadas con permisos y seguridad.</p>
             <div class="project-links">
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/security_permission', '_blank')">Ver backend</button>
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/security_permission', '_blank')">Ver backend</button>
             </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Kong en Docker</h3>
+            <h3 class="project-title" data-i18n="proj.kong.title">Kong en Docker</h3>
             <span class="lang">Makefile / Docker</span>
-            <p>Orquestación y referencia con Kong en entorno contenedorizado.</p>
+            <p data-i18n="proj.kong.desc">Orquestación y referencia con Kong en entorno contenedorizado.</p>
             <div class="project-links">
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/kong-docker', '_blank')">Ver backend</button>
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/kong-docker', '_blank')">Ver backend</button>
             </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Pruebas con sockets</h3>
+            <h3 class="project-title" data-i18n="proj.sockets.title">Pruebas con sockets</h3>
             <span class="lang">Python (Flask)</span>
-            <p>Experimentos con comunicación en tiempo real vía sockets.</p>
+            <p data-i18n="proj.sockets.desc">Experimentos con comunicación en tiempo real vía sockets.</p>
             <div class="project-links">
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/test_sockets', '_blank')">Ver backend</button>
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/test_sockets', '_blank')">Ver backend</button>
             </div>
           </article>
 
           <article class="project-card">
             <h3 class="project-title">Task management</h3>
             <span class="lang">Vue 3 · Python (Django)</span>
-            <p>Gestión de tareas full stack (frontend y backend acoplados).</p>
+            <p data-i18n="proj.task.desc">Gestión de tareas full stack (frontend y backend acoplados).</p>
             <div class="project-links">
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/task_management_front.git', '_blank')">Ver frontend</button>
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/task_management_back.git', '_blank')">Ver backend</button>
+              <button class="btn btn-ghost" data-i18n="btn.frontend" onclick="window.open('https://github.com/diegovega007/task_management_front.git', '_blank')">Ver frontend</button>
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/task_management_back.git', '_blank')">Ver backend</button>
             </div>
           </article>
 
           <article class="project-card">
-            <h3 class="project-title">Descarga en ZIP</h3>
+            <h3 class="project-title" data-i18n="proj.zip.title">Descarga en ZIP</h3>
             <span class="lang">Python (Flask)</span>
-            <p>Utilidad para descarga empaquetada en ZIP.</p>
-            <div class="project-links"> 
-              <button class="btn btn-ghost" onclick="window.open('https://github.com/diegovega007/zip_download.git', '_blank')">Ver backend</button>
+            <p data-i18n="proj.zip.desc">Utilidad para descarga empaquetada en ZIP.</p>
+            <div class="project-links">
+              <button class="btn btn-ghost" data-i18n="btn.backend" onclick="window.open('https://github.com/diegovega007/zip_download.git', '_blank')">Ver backend</button>
             </div>
           </article>
         </div>
       </section>
 
       <section id="perfil" aria-labelledby="perfil-titulo">
-        <h2 id="perfil-titulo" class="section-title">Perfil profesional</h2>
-        <p class="section-lead" style="margin-bottom: 0">
+        <h2 id="perfil-titulo" class="section-title" data-i18n="sec.profile">Perfil profesional</h2>
+        <p class="section-lead" style="margin-bottom: 0" data-i18n="profile.lead">
           Ingeniero en Computación con más de 5 años de experiencia en desarrollo
           backend con Python (Django, Flask, FastAPI). Experiencia en
           frontend con Vue 3, React y React Native. Implementación de soluciones con IA
           (OpenAI, Gemini, Claude) y automatización de procesos. Experiencia en el uso de librerias
           para analisis de datos y graficas (Pandas, Numpy, Matplotlib, Plotly, etc.). Integración de
-          APIs de terceros  y sistemas en tiempo
-          real. Enfoque en entrega de soluciones de alto rendimiento con
-          metodologías ágiles.
+          APIs de terceros y sistemas en tiempo real. Enfoque en entrega de soluciones de alto
+          rendimiento con metodologías ágiles.
         </p>
       </section>
 
       <section id="experiencia" aria-labelledby="exp-titulo">
-        <h2 id="exp-titulo" class="section-title">Experiencia</h2>
+        <h2 id="exp-titulo" class="section-title" data-i18n="sec.experience">Experiencia</h2>
         <div class="timeline">
           <article class="job">
             <div class="job-header">
-              <h3>SIGSA — Desarrollador Back End</h3>
-              <span class="job-meta">Puebla, México · May 2021 — presente</span>
+              <h3 data-i18n="job1.title">SIGSA — Desarrollador Back End</h3>
+              <span class="job-meta" data-i18n="job1.meta">Puebla, México · May 2021 — presente</span>
             </div>
             <ul>
-              <li>
-                Arquitectura backend con Flask y patrones de diseño escalables.
-              </li>
-              <li>
-                Optimización SQL y ORM; mejoras de rendimiento de hasta ~70% con
-                índices estratégicos.
-              </li>
-              <li>
-                Tareas asíncronas con Celery: notificaciones, reportes y
-                procesamiento de datos.
-              </li>
-              <li>
-                APIs REST documentadas con Swagger/OpenAPI para web y móvil.
-              </li>
-              <li>
-                Integraciones: geolocalización (Google Maps, Mapbox),
-                mensajería (Twilio, WhatsApp) y pagos.
-              </li>
-              <li>Caché con Redis para rendimiento.</li>
+              <li data-i18n="job1.li1">Arquitectura backend con Flask y patrones de diseño escalables.</li>
+              <li data-i18n="job1.li2">Optimización SQL y ORM; mejoras de rendimiento de hasta ~70% con índices estratégicos.</li>
+              <li data-i18n="job1.li3">Tareas asíncronas con Celery: notificaciones, reportes y procesamiento de datos.</li>
+              <li data-i18n="job1.li4">APIs REST documentadas con Swagger/OpenAPI para web y móvil.</li>
+              <li data-i18n="job1.li5">Integraciones: geolocalización (Google Maps, Mapbox), mensajería (Twilio, WhatsApp) y pagos.</li>
+              <li data-i18n="job1.li6">Caché con Redis para rendimiento.</li>
             </ul>
           </article>
           <article class="job">
             <div class="job-header">
-              <h3>Freelance — Desarrollador Full Stack</h3>
+              <h3 data-i18n="job2.title">Freelance — Desarrollador Full Stack</h3>
               <span class="job-meta">Puebla, México · Jun 2024 — Oct 2025</span>
             </div>
             <ul>
-              <li>Python (Django) y Vue 3 / React Native en frontend.</li>
-              <li>
-                APIs de IA (GPT-4, Gemini, Claude): contenido, chatbots,
-                automatización.
-              </li>
-              <li>
-                Testing E2E con Cypress.
-              </li>
-              <li>Meta Business API para modulo de mensajeria.</li>
-              <li>
-                Firebase (Auth, Firestore, Functions, Storage) y tiempo real.
-              </li>
-              <li>Web scraping con Apify.</li>
+              <li data-i18n="job2.li1">Python (Django) y Vue 3 / React Native en frontend.</li>
+              <li data-i18n="job2.li2">APIs de IA (GPT-4, Gemini, Claude): contenido, chatbots, automatización.</li>
+              <li data-i18n="job2.li3">Testing E2E con Cypress.</li>
+              <li data-i18n="job2.li4">Meta Business API para modulo de mensajeria.</li>
+              <li data-i18n="job2.li5">Firebase (Auth, Firestore, Functions, Storage) y tiempo real.</li>
+              <li data-i18n="job2.li6">Web scraping con Apify.</li>
             </ul>
           </article>
         </div>
       </section>
 
       <section id="educacion" aria-labelledby="edu-titulo">
-        <h2 id="edu-titulo" class="section-title">Educación y certificaciones</h2>
+        <h2 id="edu-titulo" class="section-title" data-i18n="sec.education">Educación y certificaciones</h2>
         <div class="edu-grid">
           <article class="edu-card">
             <p class="inst">Instituto Politécnico Nacional — ESIME Culhuacán</p>
-            <h3>Ingeniería en Computación</h3>
+            <h3 data-i18n="edu1.title">Ingeniería en Computación</h3>
             <p class="when">Ciudad de México · Sep 2016 — Dic 2020</p>
             <ul>
-              <li>Título en Ingeniería en Computación</li>
+              <li data-i18n="edu1.li1">Título en Ingeniería en Computación</li>
               <li>Cédula Profesional 13811203</li>
             </ul>
           </article>
           <article class="edu-card">
             <p class="inst">CBTIs 134</p>
-            <h3>Educación Profesional Técnica</h3>
+            <h3 data-i18n="edu2.title">Educación Profesional Técnica</h3>
             <p class="when">Puebla, México · Sep 2013 — Jun 2016</p>
           </article>
         </div>
       </section>
 
       <section id="habilidades" aria-labelledby="hab-titulo">
-        <h2 id="hab-titulo" class="section-title">Habilidades</h2>
+        <h2 id="hab-titulo" class="section-title" data-i18n="sec.skills">Habilidades</h2>
         <div class="skills-wrap">
           <div class="skill-block">
-            <h3>Lenguajes</h3>
-            <p>Python (avanzado), JavaScript (ES6+), SQL</p>
+            <h3 data-i18n="skill.languages.title">Lenguajes</h3>
+            <p data-i18n="skill.languages.val">Python (avanzado), JavaScript (ES6+), SQL</p>
           </div>
           <div class="skill-block">
             <h3>Backend</h3>
             <p>Django, Flask, FastAPI</p>
           </div>
           <div class="skill-block">
-            <h3>Frontend y móvil</h3>
+            <h3 data-i18n="skill.frontend.title">Frontend y móvil</h3>
             <p>Vue.js 3, React, React Native</p>
           </div>
           <div class="skill-block">
-            <h3>Bases de datos</h3>
-            <p>
-              PostgreSQL, MySQL, Redis (caché), Firestore, Firebase Realtime
-              Database
-            </p>
+            <h3 data-i18n="skill.db.title">Bases de datos</h3>
+            <p data-i18n="skill.db.val">PostgreSQL, MySQL, Redis (caché), Firestore, Firebase Realtime Database</p>
           </div>
           <div class="skill-block">
-            <h3>APIs e integraciones</h3>
+            <h3 data-i18n="skill.apis.title">APIs e integraciones</h3>
             <p>REST, GraphQL, Swagger/OpenAPI, Postman</p>
           </div>
           <div class="skill-block">
-            <h3>IA</h3>
-            <p>
-              OpenAI GPT-4, Gemini, Claude
-            </p>
+            <h3 data-i18n="skill.ai.title">IA</h3>
+            <p>OpenAI GPT-4, Gemini, Claude</p>
           </div>
           <div class="skill-block">
             <h3>Cloud</h3>
-            <p>Firebase, Google Cloud Platform, AWS (básico)</p>
+            <p data-i18n="skill.cloud.val">Firebase, Google Cloud Platform, AWS (básico)</p>
           </div>
           <div class="skill-block">
-            <h3>DevOps y herramientas</h3>
-            <p>Git, GitHub, GitLab, Docker (básico), Linux, Nginx, Apache</p>
+            <h3 data-i18n="skill.devops.title">DevOps y herramientas</h3>
+            <p data-i18n="skill.devops.val">Git, GitHub, GitLab, Docker (básico), Linux, Nginx, Apache</p>
           </div>
           <div class="skill-block">
-            <h3>Testing y automatización</h3>
+            <h3 data-i18n="skill.testing.title">Testing y automatización</h3>
             <p>Cypress (E2E), Apify, Selenium, BeautifulSoup</p>
           </div>
           <div class="skill-block">
             <h3>Third-party</h3>
-            <p>
-              Meta Business API, WhatsApp Business API, Twilio, Google Maps API,
-              Stripe, PayPal
-            </p>
+            <p>Meta Business API, WhatsApp Business API, Twilio, Google Maps API, Stripe, PayPal</p>
           </div>
           <div class="skill-block">
-            <h3>Metodologías</h3>
-            <p>Scrum, Agile, Git Flow, code review, clean code, SOLID, patrones</p>
+            <h3 data-i18n="skill.methods.title">Metodologías</h3>
+            <p data-i18n="skill.methods.val">Scrum, Agile, Git Flow, code review, clean code, SOLID, patrones</p>
           </div>
         </div>
         <h3
           class="section-title"
           style="font-size: 1rem; margin-top: 2rem; margin-bottom: 0.75rem"
+          data-i18n="sec.softskills"
         >
           Habilidades interpersonales
         </h3>
         <ul class="soft-list">
-          <li>Trabajo en equipo</li>
-          <li>Comunicación efectiva</li>
-          <li>Responsabilidad</li>
-          <li>Liderazgo técnico</li>
-          <li>Aprendizaje continuo</li>
+          <li data-i18n="soft.li1">Trabajo en equipo</li>
+          <li data-i18n="soft.li2">Comunicación efectiva</li>
+          <li data-i18n="soft.li3">Responsabilidad</li>
+          <li data-i18n="soft.li4">Liderazgo técnico</li>
+          <li data-i18n="soft.li5">Aprendizaje continuo</li>
         </ul>
         <h3
           class="section-title"
           style="font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem"
+          data-i18n="sec.languages"
         >
           Idiomas
         </h3>
         <ul class="soft-list">
-          <li>Español — nativo</li>
-          <li>Inglés — intermedio</li>
+          <li data-i18n="lang.li1">Español — nativo</li>
+          <li data-i18n="lang.li2">Inglés — intermedio</li>
         </ul>
       </section>
 
       <section aria-labelledby="extra-titulo">
-        <h2 id="extra-titulo" class="section-title">Formación complementaria</h2>
+        <h2 id="extra-titulo" class="section-title" data-i18n="sec.extra">Formación complementaria</h2>
         <ul class="ona-list" style="max-width: 65ch">
-          <li>
+          <li data-i18n="extra.li1">
             Congreso ROC&amp;C 2020 (29.a Reunión Internacional). Organizador IEEE
             Sección México, noviembre 2020.
           </li>
-          <li>
+          <li data-i18n="extra.li2">
             Exposición del proyecto «Reconocedor de Gestos Anímicos para un Aula
             de Clase», Proyectos Tecnológicos 2019 ESIME Culhuacán, noviembre
             2019.
           </li>
-          <li>Curso de inglés nivel A2, Centro de Idiomas Volkswagen Zavaleta, Puebla.</li>
+          <li data-i18n="extra.li3">Curso de inglés nivel A2, Centro de Idiomas Volkswagen Zavaleta, Puebla.</li>
         </ul>
       </section>
     </main>
@@ -357,5 +333,249 @@
         · Puebla, México
       </p>
     </footer>
+
+    <script>
+      (function () {
+        /* ── Translations ─────────────────────────────────────────── */
+        var t = {
+          es: {
+            'skip': 'Ir al contenido',
+            'nav.aria': 'Principal',
+            'nav.projects': 'Proyectos',
+            'nav.experience': 'Experiencia',
+            'nav.education': 'Educación',
+            'nav.skills': 'Habilidades',
+            'nav.contact': 'Contacto',
+            'theme.aria': 'Cambiar tema',
+            'hero.badge': 'Portafolio',
+            'hero.img.alt': 'Retrato de Diego Vega Reyes',
+            'hero.headline': 'Ingeniero en Computación · Cédula Profesional 13811203 · Más de 5 años en desarrollo backend con Python y experiencia en frontend con Vue y React.',
+            'hero.btn.contact': 'Contacto por correo',
+            'hero.btn.projects': 'Ver proyectos',
+            'sec.projects': 'Proyectos',
+            'ona.eyebrow': 'Producción · uso real del negocio',
+            'ona.title': 'Ona Nails — citas y administración',
+            'ona.desc': '<strong>Ona Nails</strong> es un negocio de uñas. La web tiene como objetivo principal mostrar la información del negocio y permitir a las clientas <strong>agendar citas</strong>. Incluye un <strong>módulo de administración</strong> para gestionar citas, servicios y el día a día del negocio. Cliente desarrollado con <strong>React</strong>; API y lógica de negocio con <strong>Python (FastAPI)</strong>. Es el proyecto con mayor probabilidad de pasar a producción para el <strong>uso real</strong> del establecimiento.',
+            'ona.li1': '<strong>Landing e información</strong> del negocio y servicios.',
+            'ona.li2': '<strong>Flujo de citas</strong> orientado a la experiencia de la clienta.',
+            'ona.li3': '<strong>Administración</strong>: citas, servicios y operación interna.',
+            'proj.researcher.desc': 'Proyecto personal para practicar el uso de <strong>agentes de IA</strong>. Ecosistema frontend + backend bajo el mismo nombre de referencia.',
+            'proj.permisos.title': 'Permisos y seguridad',
+            'proj.permisos.desc': 'Librería / utilidades relacionadas con permisos y seguridad.',
+            'proj.kong.title': 'Kong en Docker',
+            'proj.kong.desc': 'Orquestación y referencia con Kong en entorno contenedorizado.',
+            'proj.sockets.title': 'Pruebas con sockets',
+            'proj.sockets.desc': 'Experimentos con comunicación en tiempo real vía sockets.',
+            'proj.task.desc': 'Gestión de tareas full stack (frontend y backend acoplados).',
+            'proj.zip.title': 'Descarga en ZIP',
+            'proj.zip.desc': 'Utilidad para descarga empaquetada en ZIP.',
+            'btn.frontend': 'Ver frontend',
+            'btn.backend': 'Ver backend',
+            'sec.profile': 'Perfil profesional',
+            'profile.lead': 'Ingeniero en Computación con más de 5 años de experiencia en desarrollo backend con Python (Django, Flask, FastAPI). Experiencia en frontend con Vue 3, React y React Native. Implementación de soluciones con IA (OpenAI, Gemini, Claude) y automatización de procesos. Experiencia en el uso de librerías para análisis de datos y gráficas (Pandas, Numpy, Matplotlib, Plotly, etc.). Integración de APIs de terceros y sistemas en tiempo real. Enfoque en entrega de soluciones de alto rendimiento con metodologías ágiles.',
+            'sec.experience': 'Experiencia',
+            'job1.title': 'SIGSA — Desarrollador Back End',
+            'job1.meta': 'Puebla, México · May 2021 — presente',
+            'job1.li1': 'Arquitectura backend con Flask y patrones de diseño escalables.',
+            'job1.li2': 'Optimización SQL y ORM; mejoras de rendimiento de hasta ~70% con índices estratégicos.',
+            'job1.li3': 'Tareas asíncronas con Celery: notificaciones, reportes y procesamiento de datos.',
+            'job1.li4': 'APIs REST documentadas con Swagger/OpenAPI para web y móvil.',
+            'job1.li5': 'Integraciones: geolocalización (Google Maps, Mapbox), mensajería (Twilio, WhatsApp) y pagos.',
+            'job1.li6': 'Caché con Redis para rendimiento.',
+            'job2.title': 'Freelance — Desarrollador Full Stack',
+            'job2.li1': 'Python (Django) y Vue 3 / React Native en frontend.',
+            'job2.li2': 'APIs de IA (GPT-4, Gemini, Claude): contenido, chatbots, automatización.',
+            'job2.li3': 'Testing E2E con Cypress.',
+            'job2.li4': 'Meta Business API para módulo de mensajería.',
+            'job2.li5': 'Firebase (Auth, Firestore, Functions, Storage) y tiempo real.',
+            'job2.li6': 'Web scraping con Apify.',
+            'sec.education': 'Educación y certificaciones',
+            'edu1.title': 'Ingeniería en Computación',
+            'edu1.li1': 'Título en Ingeniería en Computación',
+            'edu2.title': 'Educación Profesional Técnica',
+            'sec.skills': 'Habilidades',
+            'skill.languages.title': 'Lenguajes',
+            'skill.languages.val': 'Python (avanzado), JavaScript (ES6+), SQL',
+            'skill.frontend.title': 'Frontend y móvil',
+            'skill.db.title': 'Bases de datos',
+            'skill.db.val': 'PostgreSQL, MySQL, Redis (caché), Firestore, Firebase Realtime Database',
+            'skill.apis.title': 'APIs e integraciones',
+            'skill.ai.title': 'IA',
+            'skill.cloud.val': 'Firebase, Google Cloud Platform, AWS (básico)',
+            'skill.devops.title': 'DevOps y herramientas',
+            'skill.devops.val': 'Git, GitHub, GitLab, Docker (básico), Linux, Nginx, Apache',
+            'skill.testing.title': 'Testing y automatización',
+            'skill.methods.title': 'Metodologías',
+            'skill.methods.val': 'Scrum, Agile, Git Flow, code review, clean code, SOLID, patrones',
+            'sec.softskills': 'Habilidades interpersonales',
+            'soft.li1': 'Trabajo en equipo',
+            'soft.li2': 'Comunicación efectiva',
+            'soft.li3': 'Responsabilidad',
+            'soft.li4': 'Liderazgo técnico',
+            'soft.li5': 'Aprendizaje continuo',
+            'sec.languages': 'Idiomas',
+            'lang.li1': 'Español — nativo',
+            'lang.li2': 'Inglés — intermedio',
+            'sec.extra': 'Formación complementaria',
+            'extra.li1': 'Congreso ROC&amp;C 2020 (29.ª Reunión Internacional). Organizador IEEE Sección México, noviembre 2020.',
+            'extra.li2': 'Exposición del proyecto «Reconocedor de Gestos Anímicos para un Aula de Clase», Proyectos Tecnológicos 2019 ESIME Culhuacán, noviembre 2019.',
+            'extra.li3': 'Curso de inglés nivel A2, Centro de Idiomas Volkswagen Zavaleta, Puebla.',
+          },
+          en: {
+            'skip': 'Skip to content',
+            'nav.aria': 'Main',
+            'nav.projects': 'Projects',
+            'nav.experience': 'Experience',
+            'nav.education': 'Education',
+            'nav.skills': 'Skills',
+            'nav.contact': 'Contact',
+            'theme.aria': 'Toggle theme',
+            'hero.badge': 'Portfolio',
+            'hero.img.alt': 'Portrait of Diego Vega Reyes',
+            'hero.headline': 'Computer Engineer · Professional License 13811203 · 5+ years of backend development with Python and frontend experience with Vue and React.',
+            'hero.btn.contact': 'Contact by email',
+            'hero.btn.projects': 'View projects',
+            'sec.projects': 'Projects',
+            'ona.eyebrow': 'Production · real business use',
+            'ona.title': 'Ona Nails — appointments & management',
+            'ona.desc': '<strong>Ona Nails</strong> is a nail salon business. The website\'s main goal is to showcase business information and allow clients to <strong>book appointments</strong>. It includes an <strong>admin module</strong> to manage appointments, services and day-to-day operations. Frontend built with <strong>React</strong>; API and business logic with <strong>Python (FastAPI)</strong>. This is the project most likely to go live for <strong>real use</strong> at the establishment.',
+            'ona.li1': '<strong>Landing page &amp; information</strong> about the business and services.',
+            'ona.li2': '<strong>Appointment flow</strong> focused on the client experience.',
+            'ona.li3': '<strong>Admin panel</strong>: appointments, services and internal operations.',
+            'proj.researcher.desc': 'Personal project to practise working with <strong>AI agents</strong>. A frontend + backend ecosystem under the same reference name.',
+            'proj.permisos.title': 'Permissions & security',
+            'proj.permisos.desc': 'Library / utilities related to permissions and security.',
+            'proj.kong.title': 'Kong on Docker',
+            'proj.kong.desc': 'Orchestration and reference setup with Kong in a containerised environment.',
+            'proj.sockets.title': 'Socket experiments',
+            'proj.sockets.desc': 'Experiments with real-time communication via sockets.',
+            'proj.task.desc': 'Full-stack task management (coupled frontend and backend).',
+            'proj.zip.title': 'ZIP download',
+            'proj.zip.desc': 'Utility for bundled ZIP file downloads.',
+            'btn.frontend': 'View frontend',
+            'btn.backend': 'View backend',
+            'sec.profile': 'Professional profile',
+            'profile.lead': 'Computer Engineer with 5+ years of backend development experience using Python (Django, Flask, FastAPI). Frontend experience with Vue 3, React and React Native. Implementation of AI-powered solutions (OpenAI, Gemini, Claude) and process automation. Experience with data analysis and visualisation libraries (Pandas, Numpy, Matplotlib, Plotly, etc.). Third-party API integration and real-time systems. Focused on delivering high-performance solutions using agile methodologies.',
+            'sec.experience': 'Experience',
+            'job1.title': 'SIGSA — Back End Developer',
+            'job1.meta': 'Puebla, México · May 2021 — present',
+            'job1.li1': 'Backend architecture with Flask and scalable design patterns.',
+            'job1.li2': 'SQL and ORM optimisation; performance improvements of up to ~70% with strategic indexes.',
+            'job1.li3': 'Async tasks with Celery: notifications, reports and data processing.',
+            'job1.li4': 'REST APIs documented with Swagger/OpenAPI for web and mobile.',
+            'job1.li5': 'Integrations: geolocation (Google Maps, Mapbox), messaging (Twilio, WhatsApp) and payments.',
+            'job1.li6': 'Redis caching for performance.',
+            'job2.title': 'Freelance — Full Stack Developer',
+            'job2.li1': 'Python (Django) and Vue 3 / React Native on the frontend.',
+            'job2.li2': 'AI APIs (GPT-4, Gemini, Claude): content, chatbots, automation.',
+            'job2.li3': 'E2E testing with Cypress.',
+            'job2.li4': 'Meta Business API for messaging module.',
+            'job2.li5': 'Firebase (Auth, Firestore, Functions, Storage) and real-time features.',
+            'job2.li6': 'Web scraping with Apify.',
+            'sec.education': 'Education & certifications',
+            'edu1.title': 'Computer Engineering',
+            'edu1.li1': 'Bachelor\'s degree in Computer Engineering',
+            'edu2.title': 'Technical Professional Education',
+            'sec.skills': 'Skills',
+            'skill.languages.title': 'Languages',
+            'skill.languages.val': 'Python (advanced), JavaScript (ES6+), SQL',
+            'skill.frontend.title': 'Frontend & mobile',
+            'skill.db.title': 'Databases',
+            'skill.db.val': 'PostgreSQL, MySQL, Redis (cache), Firestore, Firebase Realtime Database',
+            'skill.apis.title': 'APIs & integrations',
+            'skill.ai.title': 'AI',
+            'skill.cloud.val': 'Firebase, Google Cloud Platform, AWS (basic)',
+            'skill.devops.title': 'DevOps & tools',
+            'skill.devops.val': 'Git, GitHub, GitLab, Docker (basic), Linux, Nginx, Apache',
+            'skill.testing.title': 'Testing & automation',
+            'skill.methods.title': 'Methodologies',
+            'skill.methods.val': 'Scrum, Agile, Git Flow, code review, clean code, SOLID, patterns',
+            'sec.softskills': 'Soft skills',
+            'soft.li1': 'Teamwork',
+            'soft.li2': 'Effective communication',
+            'soft.li3': 'Accountability',
+            'soft.li4': 'Technical leadership',
+            'soft.li5': 'Continuous learning',
+            'sec.languages': 'Languages',
+            'lang.li1': 'Spanish — native',
+            'lang.li2': 'English — intermediate',
+            'sec.extra': 'Additional training',
+            'extra.li1': 'ROC&amp;C 2020 Congress (29th International Meeting). Organised by IEEE Mexico Section, November 2020.',
+            'extra.li2': 'Presentation of the project "Facial Gesture Recogniser for a Classroom", Technology Projects 2019 ESIME Culhuacán, November 2019.',
+            'extra.li3': 'English course A2 level, Centro de Idiomas Volkswagen Zavaleta, Puebla.',
+          }
+        };
+
+        /* ── Apply translations ───────────────────────────────────── */
+        function applyLang(lang) {
+          var dict = t[lang];
+          document.documentElement.lang = lang;
+
+          document.querySelectorAll('[data-i18n]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n');
+            if (dict[key] !== undefined) {
+              el.innerHTML = dict[key];
+            }
+          });
+
+          document.querySelectorAll('[data-i18n-aria-label]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n-aria-label');
+            if (dict[key] !== undefined) {
+              el.setAttribute('aria-label', dict[key]);
+            }
+          });
+
+          document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
+            var key = el.getAttribute('data-i18n-alt');
+            if (dict[key] !== undefined) {
+              el.setAttribute('alt', dict[key]);
+            }
+          });
+
+          langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
+          localStorage.setItem('dv-lang', lang);
+        }
+
+        /* ── Theme ────────────────────────────────────────────────── */
+        var root = document.documentElement;
+        var themeToggle = document.getElementById('theme-toggle');
+        var iconMoon = document.getElementById('icon-moon');
+        var iconSun = document.getElementById('icon-sun');
+
+        function getInitialTheme() {
+          var saved = localStorage.getItem('dv-theme');
+          if (saved) return saved;
+          return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+          iconMoon.style.display = theme === 'light' ? 'none' : 'block';
+          iconSun.style.display = theme === 'light' ? 'block' : 'none';
+          localStorage.setItem('dv-theme', theme);
+        }
+
+        applyTheme(getInitialTheme());
+
+        themeToggle.addEventListener('click', function () {
+          applyTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+        });
+
+        /* ── Language ─────────────────────────────────────────────── */
+        var langToggle = document.getElementById('lang-toggle');
+
+        function getInitialLang() {
+          var saved = localStorage.getItem('dv-lang');
+          if (saved) return saved;
+          return navigator.language && navigator.language.startsWith('en') ? 'en' : 'es';
+        }
+
+        applyLang(getInitialLang());
+
+        langToggle.addEventListener('click', function () {
+          applyLang(document.documentElement.lang === 'es' ? 'en' : 'es');
+        });
+      })();
+    </script>
   </body>
 </html>

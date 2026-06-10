@@ -6,15 +6,36 @@
   --text: #e8edf4;
   --text-muted: #8b9cb3;
   --accent: #3d9cf0;
+  --accent-hover: #6bb8f5;
   --accent-soft: rgba(61, 156, 240, 0.15);
   --ona-feature: #c97b8a;
   --ona-feature-soft: rgba(201, 123, 138, 0.18);
   --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --header-bg: rgba(15, 20, 25, 0.85);
+  --shadow: rgba(0, 0, 0, 0.45);
   --radius: 12px;
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "Fraunces", Georgia, serif;
   --max: 1100px;
   --space: clamp(1rem, 4vw, 2rem);
+}
+
+[data-theme="light"] {
+  --bg: #f5f7fa;
+  --bg-elevated: #ffffff;
+  --surface: #e8ecf2;
+  --text: #1a2332;
+  --text-muted: #5a6a80;
+  --accent: #1d78cc;
+  --accent-hover: #1460a8;
+  --accent-soft: rgba(29, 120, 204, 0.12);
+  --ona-feature: #b5566a;
+  --ona-feature-soft: rgba(181, 86, 106, 0.13);
+  --border: rgba(0, 0, 0, 0.1);
+  --border-hover: rgba(0, 0, 0, 0.2);
+  --header-bg: rgba(245, 247, 250, 0.9);
+  --shadow: rgba(0, 0, 0, 0.12);
 }
 
 *,
@@ -44,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: #6bb8f5;
+  color: var(--accent-hover);
 }
 
 .skip-link {
@@ -67,7 +88,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(15, 20, 25, 0.85);
+  background: var(--header-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -138,7 +159,7 @@ a:hover {
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--border);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 40px var(--shadow);
 }
 
 .hero-content {
@@ -246,7 +267,7 @@ a:hover {
 
 .btn-ghost:hover {
   background: var(--surface);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--border-hover);
 }
 
 /* Sections */
@@ -532,4 +553,56 @@ section {
   font-size: 0.8rem;
   color: var(--text-muted);
   text-decoration: none;
+}
+
+/* Nav controls (language + theme grouped) */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Language toggle */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  line-height: 1;
+}
+
+.lang-toggle:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--text-muted);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--surface);
+  border-color: var(--accent);
+  color: var(--text);
 }
