@@ -520,3 +520,16 @@ section {
 .site-footer a {
   color: var(--text);
 }
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
