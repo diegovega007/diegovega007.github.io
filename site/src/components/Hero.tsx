@@ -188,13 +188,31 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: EASE_OUT_EXPO }}
-              className="inline-flex items-center gap-2.5 rounded-full border border-brand-500/30 bg-brand-500/10 py-1.5 pr-4 pl-2.5 text-sm font-medium text-brand-700 dark:text-brand-200"
+              className="flex flex-wrap items-center gap-4"
             >
-              <span className="relative grid size-2.5 place-items-center">
-                <span className="absolute size-2.5 rounded-full bg-emerald-500/70 animate-pulse-ring" />
-                <span className="size-2 rounded-full bg-emerald-500" />
+              <span className="relative shrink-0">
+                <span
+                  aria-hidden
+                  className="absolute -inset-1 rounded-full bg-gradient-to-br from-brand-500 to-violet-accent opacity-70 blur-[3px]"
+                />
+                <img
+                  src="/media/diego-vega-reyes.jpg"
+                  alt={t.hero.photoAlt}
+                  width={72}
+                  height={72}
+                  decoding="async"
+                  className="relative size-[72px] rounded-full border-2 border-canvas object-cover"
+                  style={{ objectPosition: 'center 32%' }}
+                />
               </span>
-              {t.hero.available}
+
+              <span className="inline-flex items-center gap-2.5 rounded-full border border-brand-500/30 bg-brand-500/10 py-1.5 pr-4 pl-2.5 text-sm font-medium text-brand-700 dark:text-brand-200">
+                <span className="relative grid size-2.5 place-items-center">
+                  <span className="absolute size-2.5 rounded-full bg-emerald-500/70 animate-pulse-ring" />
+                  <span className="size-2 rounded-full bg-emerald-500" />
+                </span>
+                {t.hero.available}
+              </span>
             </motion.div>
 
             <motion.h1

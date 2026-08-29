@@ -23,14 +23,14 @@ function Monogram() {
   return (
     <a
       href="#top"
-      className="group flex items-center gap-2.5"
+      className="group flex shrink-0 items-center gap-2.5 whitespace-nowrap"
       aria-label="Diego Vega Reyes"
     >
       <span className="relative grid size-9 place-items-center overflow-hidden rounded-xl bg-gradient-to-br from-brand-500 to-violet-accent font-display text-sm font-bold text-white shadow-lg shadow-brand-500/20">
         DV
         <span className="absolute inset-0 translate-y-full bg-white/20 transition-transform duration-500 group-hover:translate-y-0" />
       </span>
-      <span className="hidden font-display text-sm font-semibold tracking-tight sm:block">
+      <span className="hidden font-display text-sm font-semibold tracking-tight sm:block lg:hidden xl:block">
         Diego Vega
         <span className="ml-1 text-fg-subtle">Reyes</span>
       </span>
@@ -93,7 +93,7 @@ export function Nav() {
                       href={`#${id}`}
                       aria-current={isActive ? 'true' : undefined}
                       className={cn(
-                        'relative block rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
+                        'relative block rounded-full px-2.5 py-2 text-[13px] font-medium whitespace-nowrap transition-colors xl:px-3 xl:text-sm',
                         isActive ? 'text-fg' : 'text-fg-muted hover:text-fg',
                       )}
                     >
@@ -112,7 +112,7 @@ export function Nav() {
             </ul>
           </nav>
 
-          <div className="flex items-center gap-1">
+          <div className="flex shrink-0 items-center gap-1">
             <button
               type="button"
               onClick={toggleLang}
@@ -150,9 +150,12 @@ export function Nav() {
               </AnimatePresence>
             </button>
 
-            <span className="mx-1 hidden h-5 w-px bg-line sm:block" aria-hidden />
+            <span
+              className="mx-1 hidden h-5 w-px bg-line sm:block lg:hidden xl:block"
+              aria-hidden
+            />
 
-            <div className="hidden sm:flex">
+            <div className="hidden sm:flex lg:hidden xl:flex">
               <IconLink href={CONTACT.github} label="GitHub">
                 <GithubIcon className="size-[17px]" />
               </IconLink>
@@ -164,7 +167,7 @@ export function Nav() {
             <a
               href={CONTACT.cvPath}
               download={CONTACT.cvFileName}
-              className="ml-1 hidden items-center gap-2 rounded-full bg-fg px-4 py-2 text-sm font-semibold text-canvas transition-transform hover:scale-[1.03] active:scale-95 md:inline-flex"
+              className="ml-1 hidden items-center gap-2 rounded-full bg-fg px-4 py-2 text-sm font-semibold whitespace-nowrap text-canvas transition-transform hover:scale-[1.03] active:scale-95 md:inline-flex"
             >
               <DownloadIcon className="size-4" />
               {t.actions.downloadCv}

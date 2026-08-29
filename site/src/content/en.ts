@@ -11,7 +11,8 @@ export const en: Dictionary = {
     about: 'About',
     experience: 'Experience',
     skills: 'Stack',
-    work: 'Work',
+    work: 'Cases',
+    projects: 'Projects',
     education: 'Education',
     contact: 'Contact',
     sections: 'Site sections',
@@ -38,6 +39,7 @@ export const en: Dictionary = {
       'I design and scale Python backend services on PostgreSQL: documented REST APIs, distributed async processing, and mission-critical third-party integrations that keep production operations running.',
     scrollHint: 'Scroll to explore',
     yearsBadge: '5+ years shipping backend to production',
+    photoAlt: 'Portrait of Diego Vega Reyes',
   },
 
   metrics: {
@@ -275,8 +277,8 @@ export const en: Dictionary = {
   },
 
   work: {
-    kicker: 'Work',
-    heading: 'What I have built',
+    kicker: 'Impact cases',
+    heading: 'What I have built in production',
     note: 'Case studies drawn from real production work, described without confidential client information.',
     challengeLabel: 'Challenge',
     approachLabel: 'Approach',
@@ -384,6 +386,66 @@ export const en: Dictionary = {
     },
   ],
 
+  projects: {
+    kicker: 'Own projects',
+    heading: 'Code you can review',
+    note: 'Personal and contract projects, with public repositories where applicable.',
+    featuredBadge: 'Featured',
+    privateRepo: 'Private repository (client project)',
+    linkLabels: {
+      frontend: 'View frontend',
+      backend: 'View backend',
+      repo: 'View repository',
+    },
+    items: [
+      {
+        id: 'ona-nails',
+        title: 'Ona Nails — booking & admin',
+        description:
+          'Website for a nail salon: presents the business and lets clients book appointments. Includes an admin module to manage bookings, services and day-to-day operations. React client; API and business logic in Python (FastAPI).',
+        highlights: [
+          'Landing page with business information and services.',
+          'Appointment booking flow designed around the client experience.',
+          'Admin panel: bookings, services and internal operations.',
+        ],
+      },
+      {
+        id: 'personal-researcher',
+        title: 'Personal Researcher',
+        description:
+          'Personal project for going deeper on AI agents: a frontend and backend ecosystem that orchestrates LLM-assisted research.',
+      },
+      {
+        id: 'task-management',
+        title: 'Task Management',
+        description: 'Full stack task manager, with separately deployable frontend and backend.',
+      },
+      {
+        id: 'security-permission',
+        title: 'Permissions & security',
+        description:
+          'Reusable utilities for permission handling and access control in Flask services.',
+      },
+      {
+        id: 'kong-docker',
+        title: 'Kong on Docker',
+        description:
+          'Orchestration reference for the Kong API gateway in a containerised, reproducible environment.',
+      },
+      {
+        id: 'test-sockets',
+        title: 'Socket communication',
+        description: 'Experiments in real-time bidirectional communication over sockets on Flask.',
+      },
+      {
+        id: 'zip-download',
+        title: 'ZIP-packaged downloads',
+        description:
+          'Utility to generate and serve ZIP-packaged downloads from a Flask service.',
+      },
+    ],
+  },
+
   education: {
     kicker: 'Education',
     heading: 'Education & languages',
@@ -393,6 +455,24 @@ export const en: Dictionary = {
     period: 'August 2016 – July 2020',
     licenseLabel: 'Professional licence',
     license: '13811203',
+    secondaryDegree: 'Technical Professional Education',
+    secondarySchool: 'CBTIs 134',
+    secondaryPlace: 'Puebla, Mexico',
+    secondaryPeriod: 'Sep 2013 – Jun 2016',
+    extrasHeading: 'Additional training',
+    extras: [
+      'ROC&C 2020 Congress, 29th International Meeting — IEEE Mexico Section, November 2020.',
+      'Presented the project "Mood Gesture Recogniser for a Classroom" — Proyectos Tecnológicos 2019, ESIME Culhuacán, November 2019.',
+      'English course, level A2 — Centro de Idiomas Volkswagen Zavaleta, Puebla.',
+    ],
+    softHeading: 'Interpersonal skills',
+    soft: [
+      'Teamwork',
+      'Effective communication',
+      'Accountability',
+      'Technical leadership',
+      'Continuous learning',
+    ],
     languagesHeading: 'Languages',
     languages: [
       {

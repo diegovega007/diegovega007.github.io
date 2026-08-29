@@ -7,4 +7,5 @@ export const dictionaries: Record<Lang, Dictionary> = { es, en }
 export const LANGS: Lang[] = ['es', 'en']
 
 export { CONTACT } from './contact'
+export { REPOS } from './repos'
 export type { Dictionary, Lang } from './types'

@@ -11,7 +11,8 @@ export const es: Dictionary = {
     about: 'Perfil',
     experience: 'Experiencia',
     skills: 'Stack',
-    work: 'Proyectos',
+    work: 'Casos',
+    projects: 'Proyectos',
     education: 'Formación',
     contact: 'Contacto',
     sections: 'Secciones del sitio',
@@ -38,6 +39,7 @@ export const es: Dictionary = {
       'Diseño y escalo servicios backend en Python sobre PostgreSQL: APIs REST documentadas, procesamiento asíncrono distribuido e integraciones de terceros de misión crítica que sostienen operaciones en producción.',
     scrollHint: 'Desplázate para explorar',
     yearsBadge: '5+ años construyendo backend en producción',
+    photoAlt: 'Retrato de Diego Vega Reyes',
   },
 
   metrics: {
@@ -275,8 +277,8 @@ export const es: Dictionary = {
   },
 
   work: {
-    kicker: 'Proyectos',
-    heading: 'Lo que he construido',
+    kicker: 'Casos de impacto',
+    heading: 'Lo que he construido en producción',
     note: 'Casos derivados de trabajo real en producción, descritos sin información confidencial de clientes.',
     challengeLabel: 'Reto',
     approachLabel: 'Solución',
@@ -384,6 +386,68 @@ export const es: Dictionary = {
     },
   ],
 
+  projects: {
+    kicker: 'Proyectos propios',
+    heading: 'Código que puedes revisar',
+    note: 'Proyectos personales y por contrato, con repositorios públicos donde aplica.',
+    featuredBadge: 'Destacado',
+    privateRepo: 'Repositorio privado (proyecto de cliente)',
+    linkLabels: {
+      frontend: 'Ver frontend',
+      backend: 'Ver backend',
+      repo: 'Ver repositorio',
+    },
+    items: [
+      {
+        id: 'ona-nails',
+        title: 'Ona Nails — citas y administración',
+        description:
+          'Sitio web para un negocio de uñas: muestra la información del negocio y permite a las clientas agendar citas. Incluye un módulo de administración para gestionar citas, servicios y la operación diaria. Cliente en React; API y lógica de negocio en Python (FastAPI).',
+        highlights: [
+          'Landing con la información del negocio y sus servicios.',
+          'Flujo de agendado de citas centrado en la experiencia de la clienta.',
+          'Panel de administración: citas, servicios y operación interna.',
+        ],
+      },
+      {
+        id: 'personal-researcher',
+        title: 'Personal Researcher',
+        description:
+          'Proyecto personal para profundizar en agentes de IA: un ecosistema de frontend y backend que orquesta investigación asistida por modelos de lenguaje.',
+      },
+      {
+        id: 'task-management',
+        title: 'Task Management',
+        description:
+          'Gestor de tareas full stack, con frontend y backend desplegables por separado.',
+      },
+      {
+        id: 'security-permission',
+        title: 'Permisos y seguridad',
+        description:
+          'Utilidades reutilizables para el manejo de permisos y control de acceso en servicios Flask.',
+      },
+      {
+        id: 'kong-docker',
+        title: 'Kong sobre Docker',
+        description:
+          'Referencia de orquestación del API gateway Kong en un entorno contenedorizado y reproducible.',
+      },
+      {
+        id: 'test-sockets',
+        title: 'Comunicación con sockets',
+        description:
+          'Experimentos de comunicación bidireccional en tiempo real vía sockets sobre Flask.',
+      },
+      {
+        id: 'zip-download',
+        title: 'Descargas empaquetadas en ZIP',
+        description:
+          'Utilidad para generar y servir descargas empaquetadas en ZIP desde un servicio Flask.',
+      },
+    ],
+  },
+
   education: {
     kicker: 'Formación',
     heading: 'Educación e idiomas',
@@ -393,6 +457,24 @@ export const es: Dictionary = {
     period: 'Agosto 2016 – Julio 2020',
     licenseLabel: 'Cédula Profesional',
     license: '13811203',
+    secondaryDegree: 'Educación Profesional Técnica',
+    secondarySchool: 'CBTIs 134',
+    secondaryPlace: 'Puebla, México',
+    secondaryPeriod: 'Sep 2013 – Jun 2016',
+    extrasHeading: 'Formación complementaria',
+    extras: [
+      'Congreso ROC&C 2020, 29.ª Reunión Internacional — IEEE Sección México, noviembre 2020.',
+      'Exposición del proyecto «Reconocedor de Gestos Anímicos para un Aula de Clase» — Proyectos Tecnológicos 2019, ESIME Culhuacán, noviembre 2019.',
+      'Curso de inglés nivel A2 — Centro de Idiomas Volkswagen Zavaleta, Puebla.',
+    ],
+    softHeading: 'Habilidades interpersonales',
+    soft: [
+      'Trabajo en equipo',
+      'Comunicación efectiva',
+      'Responsabilidad',
+      'Liderazgo técnico',
+      'Aprendizaje continuo',
+    ],
     languagesHeading: 'Idiomas',
     languages: [
       {

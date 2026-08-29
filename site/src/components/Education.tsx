@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import { useI18n } from '../lib/i18n'
-import { GlobeIcon, GraduationIcon } from './icons'
+import { GlobeIcon, GraduationIcon, SparkIcon } from './icons'
 import { Container, EASE_OUT_EXPO, Reveal, Section, SectionHeading } from './primitives'
 
 export function Education() {
@@ -40,6 +40,16 @@ export function Education() {
                   </dd>
                 </div>
               </dl>
+
+              <div className="relative mt-6 border-t border-line pt-5">
+                <h4 className="font-display text-base font-semibold tracking-tight">
+                  {education.secondaryDegree}
+                </h4>
+                <p className="mt-1 text-sm text-fg-muted">{education.secondarySchool}</p>
+                <p className="mt-1.5 font-mono text-xs text-fg-subtle">
+                  {education.secondaryPlace} · {education.secondaryPeriod}
+                </p>
+              </div>
             </article>
           </Reveal>
 
@@ -81,9 +91,41 @@ export function Education() {
                   </li>
                 ))}
               </ul>
+
+              <div className="mt-7 border-t border-line pt-5">
+                <h4 className="font-mono text-[11px] tracking-[0.18em] text-fg-subtle uppercase">
+                  {education.softHeading}
+                </h4>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {education.soft.map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-line bg-surface-2/70 px-3 py-1.5 text-xs font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </article>
           </Reveal>
         </div>
+
+        <Reveal className="mt-5" amount={0.15}>
+          <article className="rounded-2xl border border-line bg-surface/70 p-7">
+            <h3 className="font-mono text-[11px] tracking-[0.18em] text-fg-subtle uppercase">
+              {education.extrasHeading}
+            </h3>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+              {education.extras.map((extra) => (
+                <li key={extra} className="flex gap-3 text-sm text-fg-muted">
+                  <SparkIcon className="mt-0.5 size-4 shrink-0 text-brand-500" />
+                  <span className="text-pretty">{extra}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </Reveal>
       </Container>
     </Section>
   )

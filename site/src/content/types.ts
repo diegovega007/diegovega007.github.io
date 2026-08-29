@@ -43,6 +43,16 @@ export interface CaseStudy {
   stack: string[]
 }
 
+export type RepoLinkKind = 'frontend' | 'backend' | 'repo'
+
+/** Localised copy for a repository. Stack, images and URLs live in `repos.ts`. */
+export interface RepoProject {
+  id: string
+  title: string
+  description: string
+  highlights?: string[]
+}
+
 export interface LanguageSkill {
   name: string
   level: string
@@ -60,6 +70,7 @@ export interface Dictionary {
     experience: string
     skills: string
     work: string
+    projects: string
     education: string
     contact: string
     sections: string
@@ -83,6 +94,7 @@ export interface Dictionary {
     intro: string
     scrollHint: string
     yearsBadge: string
+    photoAlt: string
   }
   metrics: {
     heading: string
@@ -118,6 +130,15 @@ export interface Dictionary {
     collapse: string
   }
   cases: CaseStudy[]
+  projects: {
+    kicker: string
+    heading: string
+    note: string
+    featuredBadge: string
+    privateRepo: string
+    linkLabels: Record<RepoLinkKind, string>
+    items: RepoProject[]
+  }
   education: {
     kicker: string
     heading: string
@@ -127,6 +148,14 @@ export interface Dictionary {
     period: string
     licenseLabel: string
     license: string
+    secondaryDegree: string
+    secondarySchool: string
+    secondaryPlace: string
+    secondaryPeriod: string
+    extrasHeading: string
+    extras: string[]
+    softHeading: string
+    soft: string[]
     languagesHeading: string
     languages: LanguageSkill[]
   }

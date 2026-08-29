@@ -9,6 +9,7 @@ import { Hero } from './components/Hero'
 import { Marquee } from './components/Marquee'
 import { Metrics } from './components/Metrics'
 import { Nav } from './components/Nav'
+import { Projects } from './components/Projects'
 import { ScrollProgress } from './components/ScrollProgress'
 import { Skills } from './components/Skills'
 import { Work } from './components/Work'
@@ -41,6 +42,7 @@ export default function App() {
         <Experience />
         <Skills />
         <Work />
+        <Projects />
         <Education />
         <Contact />
       </main>
