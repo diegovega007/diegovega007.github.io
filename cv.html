@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diego Vega Reyes — CV</title>
+<style>
+  /* Sin librerías ni fuentes externas: solo fuentes del sistema para que el PDF
+     se genere idéntico en cualquier equipo y sin conexión. */
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #14425f;
+    --rule: #c9d4db;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    margin: 0;
+    padding: 10mm 12mm;
+    max-width: 216mm;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 8.8pt;
+    line-height: 1.31;
+    color: var(--ink);
+    background: #fff;
+  }
+
+  header { margin-bottom: 6px; }
+
+  h1 {
+    margin: 0;
+    font-size: 18pt;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--accent);
+  }
+
+  .headline {
+    margin: 2px 0 4px;
+    font-size: 9.4pt;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .contact {
+    font-size: 8.2pt;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  .contact a { color: var(--muted); text-decoration: none; }
+
+  .contact .sep { color: var(--rule); padding: 0 3px; }
+
+  h2 {
+    margin: 6px 0 2.5px;
+    padding-bottom: 1.5px;
+    border-bottom: 1.2px solid var(--accent);
+    font-size: 8.8pt;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  p.summary { margin: 0; text-align: justify; }
+
+  .job { margin-top: 6px; }
+  .job:first-of-type { margin-top: 0; }
+
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .role { font-size: 9.7pt; font-weight: 700; margin: 0; }
+  .company { font-weight: 700; }
+  .dates { font-size: 8.2pt; color: var(--muted); white-space: nowrap; font-weight: 600; }
+  .meta { font-size: 8.1pt; color: var(--muted); font-style: italic; margin: 0 0 3px; }
+  .scope { margin: 0 0 3px; font-size: 8.7pt; color: #333; }
+
+  ul { margin: 0; padding-left: 14px; }
+  li { margin-bottom: 1.5px; }
+  li::marker { color: var(--accent); }
+
+  strong { font-weight: 600; }
+
+  .skills { margin: 0; }
+  .skill-row { margin-bottom: 1px; }
+  .skill-label { font-weight: 700; color: var(--accent); }
+
+  .edu-title { font-weight: 700; }
+  .edu-line { margin: 0; }
+  .edu-meta { font-size: 8.5pt; color: var(--muted); margin: 0 0 2px; }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 0 16px;
+    align-items: start;
+  }
+  .footer-grid h2 { margin-top: 6px; }
+
+  .langs { margin: 0; }
+  .lang-row { margin-bottom: 1px; }
+
+  @page { size: letter; margin: 0; }
+
+  @media print {
+    body { padding: 10mm 12mm; }
+    .job, li { page-break-inside: avoid; }
+    h2 { page-break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Diego Vega Reyes</h1>
+  <div class="headline">Ingeniero de Software Backend &nbsp;|&nbsp; Python &middot; APIs REST &middot; Integraciones &middot; IA Aplicada</div>
+  <div class="contact">
+    Puebla, Pue., México (Disponible para remoto e híbrido)<span class="sep">|</span>+52 222 921 0119<span class="sep">|</span><a href="mailto:diego.vegareyes@gmail.com">diego.vegareyes@gmail.com</a><br>
+    <a href="https://linkedin.com/in/diegovegareyes">linkedin.com/in/diegovegareyes</a><span class="sep">|</span><a href="https://github.com/diegovega007">github.com/diegovega007</a><span class="sep">|</span><a href="https://diegovega007.github.io/">diegovega007.github.io</a>
+  </div>
+</header>
+
+<h2>Resumen Profesional</h2>
+<p class="summary">
+  Ingeniero en Computación con más de 5 años de experiencia diseñando y escalando servicios backend en <strong>Python (Flask, Django, FastAPI)</strong> sobre <strong>PostgreSQL</strong>. Especializado en <strong>APIs REST</strong>, procesamiento asíncrono distribuido (<strong>Celery, Redis</strong>), optimización de rendimiento de bases de datos e integración de servicios de terceros de misión crítica (<strong>Twilio, WhatsApp Business API, Meta Business API, Stripe, Google Maps</strong>). Implemento funcionalidades con <strong>LLMs (OpenAI, Gemini, Claude)</strong> para asistentes conversacionales y automatización. Perfil full stack con <strong>Vue 3, React y React Native</strong>.
+</p>
+
+<h2>Experiencia Profesional</h2>
+
+<div class="job">
+  <div class="job-head">
+    <p class="role">Desarrollador Backend &mdash; <span class="company">SIGSA</span></p>
+    <span class="dates">Mayo 2021 &ndash; Presente</span>
+  </div>
+  <p class="meta">Puebla, México</p>
+  <p class="scope">Ownership técnico del backend de la plataforma empresarial de gestión y geolocalización de flotas.</p>
+  <ul>
+    <li>Diseñé e implementé la arquitectura backend en <strong>Flask + PostgreSQL</strong> para aplicaciones empresariales en producción, consumida por aplicaciones web y móviles.</li>
+    <li>Reduje hasta <strong>~70%</strong> el tiempo de consulta de recorridos GPS con índices en PostgreSQL e implementé caché en <strong>Redis</strong>, disminuyendo la carga sobre la base de datos.</li>
+    <li>Construí el pipeline asíncrono de notificaciones, reportes y automatización de procesos con <strong>Celery + Redis</strong>.</li>
+    <li>Desarrollé y documenté APIs REST con <strong>Swagger/OpenAPI</strong>, eliminando el soporte manual a los equipos frontend y móvil durante las integraciones.</li>
+    <li>Integré <strong>Twilio</strong> (mensajería) y <strong>Traccar</strong> (geolocalización), habilitando el rastreo de flota en tiempo real y las alertas automáticas al cliente final.</li>
+    <li>Automaticé la generación de reportes empresariales antes elaborados a mano.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <p class="role">Desarrollador Full Stack &mdash; <span class="company">Freelance / Contratista independiente</span></p>
+    <span class="dates">Junio 2024 &ndash; Octubre 2025</span>
+  </div>
+  <p class="meta">Puebla, México (remoto) &middot; Proyectos por contrato ejecutados en paralelo a SIGSA, fuera del horario laboral</p>
+  <p class="scope">Entrega end-to-end de aplicaciones web y móviles para múltiples clientes, desde el levantamiento de requerimientos hasta el despliegue.</p>
+  <ul>
+    <li>Entregué aplicaciones full stack a producción con <strong>Django, Vue 3 y React Native</strong>, de la arquitectura al despliegue.</li>
+    <li>Implementé asistentes conversacionales con <strong>OpenAI GPT-4, Google Gemini y Anthropic Claude</strong> para atención y automatización sin intervención humana.</li>
+    <li>Construí plataformas de mensajería sobre <strong>WhatsApp Business API y Meta Business API</strong>, centralizando la atención al cliente en una sola bandeja.</li>
+    <li>Diseñé arquitecturas serverless con <strong>Firebase</strong> (Auth, Firestore, Cloud Functions, Storage), eliminando la administración de servidores.</li>
+    <li>Establecí la suite de pruebas <strong>end-to-end con Cypress</strong> sobre los flujos críticos, previniendo regresiones en cada despliegue.</li>
+    <li>Automaticé la extracción de datos con <strong>Apify, Selenium y BeautifulSoup</strong>, sustituyendo capturas manuales.</li>
+  </ul>
+</div>
+
+<h2>Habilidades Técnicas</h2>
+<div class="skills">
+  <div class="skill-row"><span class="skill-label">Lenguajes:</span> Python (avanzado), SQL, JavaScript (ES6+)</div>
+  <div class="skill-row"><span class="skill-label">Backend &amp; APIs:</span> Flask, Django, Django REST Framework, FastAPI, APIs REST, Swagger/OpenAPI, Celery, arquitectura de microservicios, Clean Code, SOLID</div>
+  <div class="skill-row"><span class="skill-label">Bases de Datos:</span> PostgreSQL, MySQL, Redis, Firestore, Firebase Realtime Database, optimización de consultas, indexación</div>
+  <div class="skill-row"><span class="skill-label">Frontend:</span> Vue.js 3, React, React Native, HTML5, CSS3</div>
+  <div class="skill-row"><span class="skill-label">IA Aplicada:</span> OpenAI GPT-4, Google Gemini, Anthropic Claude, ingeniería de prompts, chatbots, function calling</div>
+  <div class="skill-row"><span class="skill-label">Cloud &amp; Integraciones:</span> Google Cloud Platform, Firebase (Auth, Firestore, Functions, Storage), Twilio, WhatsApp Business API, Meta Business API, Stripe, Google Maps API, Traccar</div>
+  <div class="skill-row"><span class="skill-label">Testing &amp; DevOps:</span> Git, GitHub, GitLab, Docker, Linux/Unix, Nginx, Cypress, Selenium, Apify, BeautifulSoup</div>
+  <div class="skill-row"><span class="skill-label">Datos:</span> Pandas, NumPy</div>
+  <div class="skill-row"><span class="skill-label">Metodologías:</span> Scrum, Agile, code review, control de versiones con Git Flow</div>
+</div>
+
+<div class="footer-grid">
+  <div>
+    <h2>Educación</h2>
+    <p class="edu-line"><span class="edu-title">Ingeniería en Computación</span> &mdash; Instituto Politécnico Nacional, ESIME Culhuacán</p>
+    <p class="edu-meta">Ciudad de México &middot; Agosto 2016 &ndash; Julio 2020 &middot; Cédula Profesional 13811203</p>
+  </div>
+  <div>
+    <h2>Idiomas</h2>
+    <div class="langs">
+      <div class="lang-row"><strong>Español:</strong> Nativo</div>
+      <div class="lang-row"><strong>Inglés:</strong> Intermedio (B1) — lectura de documentación técnica y comunicación profesional escrita</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
