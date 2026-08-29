@@ -1,7 +1,7 @@
 /** Language-neutral contact details, single source of truth for links. */
 export const CONTACT = {
   name: 'Diego Vega Reyes',
-  email: 'diego.vegareyes@gmail.com',
+  email: 'diego_vegaaa@hotmail.com',
   phoneDisplay: '+52 222 921 0119',
   phoneHref: 'tel:+522229210119',
   whatsappHref: 'https://wa.me/522229210119',
